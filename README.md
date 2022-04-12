@@ -24,7 +24,7 @@ Phishing is a type of cyber-attack that is engineered to steal user data that of
 ---
 ## 3. Data
 ---
-The data that I got came from a study on ![Mendeley data](https://data.mendeley.com/datasets/c2gw7fy2j4/3) about phishing websites. The target variable in this project is the `status` column where it is split into `phishing` or `legitimate`. The target data is split evenly. There are 87 features that are in the initial dataset.
+The data that I got came from a study on [Mendeley data](https://data.mendeley.com/datasets/c2gw7fy2j4/3) about phishing websites. The target variable in this project is the `status` column where it is split into `phishing` or `legitimate`. The target data is split evenly. There are 87 features that are in the initial dataset.
 
 ![phishing data bar graph](images/phishing%20data.png)
 
@@ -35,4 +35,8 @@ Our initial model is a DummyClassifier model that gives us a raw estimation of w
 
 ![dummy classifier](images/dummyclassifier.png)
 
-Our next model that we implement after this DummyClassifier is a LogisticRegression model. A LogisticRegression model excels in classification of binary targets. 
+Our next model that we implement after this DummyClassifier is a LogisticRegression model. A LogisticRegression model excels in classification of binary targets. This LogisticRegression model has 1000 max iterations. This model produced an accuracy score of 78% and a recall score of 79%.
+
+![first logreg](images/firstlogreg.png)
+
+
