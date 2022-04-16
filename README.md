@@ -31,12 +31,24 @@ The data that I got came from a study on [Mendeley data](https://data.mendeley.c
 ---
 ### 4. Modeling
 ---
-Our initial model is a DummyClassifier model that gives us a raw estimation of whether a website would be classified as phishing or not. I focused on accuracy and recall as my evalution metrics. Recall is important to this project because it assists in identifying the false negatives in the dataset. A false negative in this project would be if the model identifies an observation as a legtimate website when in reallty it actually is a phishing website. Below you will see the confusion matrix and training/test scores of the DummyClassifier model. The training accuracy and recall score are about 50% for each score, which is what we are expecting.
+Our initial model is a DummyClassifier model that gives us a raw estimation of whether a website would be classified as phishing or not. I focused on accuracy and recall as my evalution metrics. Recall is important to this project because it assists in identifying the false negatives in the dataset. A false negative in this project would be if the model identifies an observation as a legtimate website when in reallty it actually is a phishing website. The training accuracy and recall score are about 50% for each score, which is what we are expecting. The final model is a LogisticRegression model with optimal hyperparameters from the GridSearchCV function that focuses on the top 10 features identified from the ExtraTreesClassifier model. The final model produced an accuracy score of 92% and a recall score of 93%. This final model also produced an AUC curve with a score of 0.97.
 
-![dummy classifier](images/dummyclassifier.png)
+![Final Model](images/finalmetrics.png)
+![Final AUC](images/finalAUC.png)
 
-Our next model that we implement after this DummyClassifier is a LogisticRegression model. A LogisticRegression model excels in classification of binary targets. This LogisticRegression model has 1000 max iterations. This model produced an accuracy score of 78% and a recall score of 79%.
-
-![first logreg](images/firstlogreg.png)
-
+---
+### 5. Evaluation
+---
+The model that performed best was the model that utilized the features identified through the ExtraTreeClassifier and the optimized hyperparamters of the GridSearchCV. This model produced an accuracy score of **92%** and a recall score of **93%**. <br>
+The model also produces an AUC score of **0.97**, meaning that it has high classification accuracy. <br>
+This model works well with the given data, and it has the potential to become a tool to help protect people against phishing attacks. 
+I identified some important features such as the `google_index` and the `phish_hints`. If a feature lacks a `google_index`(1), then the website is 20x more likely to be a phishing website. Similarly, if a website has `phish_hints` features, it is ~5x as likely to be a phishing website.
+---
+### 6. Conclusion
+---
+Overall, this final model has high potential in helping the AGSW in identifying phishing websites. This model can be used in tandem with the research that AGSW conducts to better identify phishing websites and protect those who would be susceptible to these kinds of cyber attacks.<br>
+Some future actions I would like to consider is:
+- Utilize this model as a basis for tackling scam and phishing attacks that utilize text messages and phone calls instead of the traditional website.
+- Implement this model in a website or application where people can input URLS and get an output of how likely a website is to be phishing or not.
+- Utilize this model as a basis for phishing detection for other languages and nuances that may be country-specific.
 
