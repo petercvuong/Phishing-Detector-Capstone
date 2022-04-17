@@ -3,14 +3,14 @@
 - Coded by Peter Vuong
 
 ---
-## Table of Contents
----
-### 1. Overview
-### 2. Business Understanding
-### 3. Data
-### 4. Modeling
-### 5. Evaluation
-
+# Table of Contents
+ - [Overview](#1-overview)
+ - [Business Understanding](#2-business-understanding)
+ - [Data](#3-data)
+ - [Modeling](#4-modeling)
+ - [Evaluation](#5-evaluation)
+ - [Conclusion](#6-conclusion)
+ - [Repo Naviagtion](#repo-navigation)
 ---
 ## 1. Overview
 ---
@@ -61,13 +61,13 @@ I identified some important features such as the `google_index` and the `phish_h
 Overall, this final model has high potential in helping the AGSW in identifying phishing websites. This model can be used in tandem with the research that AGSW conducts to better identify phishing websites and protect those who would be susceptible to these kinds of cyber attacks. <br>
 Based on the data, I would recommend that:
 - Make sure the Google Index is accessible for people to utilize as a resource to check credibility
-- Educate the population on common phishing website characteristics so that they may be vigilant against cyber attacks.
+- Educate the population on common phishing website characteristics identified in the project so that they may be vigilant against cyber attacks.
 - Stay up-to-date with new phishing techniques (such as brand impersonation, remote work surveys, fake IT emails, etc.)
 <br>
  
 Some future actions I would like to consider is:
-- Utilize this model as a basis for tackling scam and phishing attacks that utilize text messages and phone calls instead of the traditional website.
-- Implement this model in a website or application where people can input URLS and get an output of how likely a website is to be phishing or not.
+- Utilize this model as a basis for tackling scam and phishing attacks that utilize text messages and phone calls instead of the traditional websites.
+- Implement this model in a web program where people can input URLS and get an output of how likely a website is to be phishing or not.
 - Utilize this model as a basis for phishing detection for other languages and nuances that may be country-specific.
 
 ## Repo Navigation
@@ -83,6 +83,6 @@ Some future actions I would like to consider is:
 
 ├── [Phishing Project.ipynb](https://github.com/petercvuong/Phishing-Detector-Capstone/blob/main/Phishing%20Project%20Notebook.ipynb)              ---------------------> The jupyter notebook containing the finalized code.
 
-├── [Web Phishing Detector.pdf]()              --------------------------> A PDF of the presentaion.
+├── [Web Phishing Detector.pdf](https://github.com/petercvuong/Phishing-Detector-Capstone/blob/main/Web%20Phishing%20Detector.pdf)              --------------------------> A PDF of the presentaion.
 
 ├── [README.md](https://github.com/petercvuong/Phishing-Detector-Capstone/blob/main/README.md)              ------------------------------> README.md for the project (you are here now).
