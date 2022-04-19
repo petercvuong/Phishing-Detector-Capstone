@@ -85,7 +85,7 @@ Some future actions I would like to consider:
 
 ├── [Final_Notebook - Jupyter Notebook.pdf](https://github.com/petercvuong/Phishing-Detector-Capstone/blob/main/Final%20Phishing%20Capstone%20Notebook%20-%20Jupyter%20Notebook.pdf)            ---> A PDF of the final project notebook.
 
-├── [Phishing Project.ipynb](https://github.com/petercvuong/Phishing-Detector-Capstone/blob/main/Phishing%20Project%20Notebook.ipynb)              ---------------------> The jupyter notebook containing the finalized code.
+├── [Final Phishing Capstone Notebook.ipynb](https://github.com/petercvuong/Phishing-Detector-Capstone/blob/main/Final%20Phishing%20Capstone%20Notebook.ipynb)              ---------------------> The jupyter notebook containing the finalized code.
 
 ├── [Web Phishing Detector Presentation.pdf](https://github.com/petercvuong/Phishing-Detector-Capstone/blob/main/Web%20Phishing%20Detector%20Presentation.pdf)              --------------------------> A PDF of the presentaion.
 
