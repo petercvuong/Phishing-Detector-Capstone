@@ -83,7 +83,7 @@ Some future actions I would like to consider:
 
 ├── [.gitignore](https://github.com/petercvuong/Phishing-Detector-Capstone/blob/main/.gitignore) ---------------------------------> .gitignore used for the project.
 
-├── [Final_Notebook - Jupyter Notebook.pdf]()            ---> A PDF of the final project notebook.
+├── [Final_Notebook - Jupyter Notebook.pdf](https://github.com/petercvuong/Phishing-Detector-Capstone/blob/main/Final%20Phishing%20Capstone%20Notebook%20-%20Jupyter%20Notebook.pdf)            ---> A PDF of the final project notebook.
 
 ├── [Phishing Project.ipynb](https://github.com/petercvuong/Phishing-Detector-Capstone/blob/main/Phishing%20Project%20Notebook.ipynb)              ---------------------> The jupyter notebook containing the finalized code.
 
