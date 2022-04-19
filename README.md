@@ -10,11 +10,11 @@
  - [Modeling](#4-modeling)
  - [Evaluation](#5-evaluation)
  - [Conclusion](#6-conclusion)
- - [Repo Naviagtion](#repo-navigation)
+ - [Repo Navigation](#repo-navigation)
 ---
 ## 1. Overview
 ---
-This project aims to build a classification model to accurately identify what a phishing website is. The dataset used has came from Mendeley that initially has 87 features and about 12,000 rows of data. This data was collected from 2020.
+This project aims to build a classification model to accurately identify what a phishing website is. The dataset used has came from Mendeley that initially has 87 features and 11,430 rows of data. This data was collected from 2020 and published in June 2021.
 
 ---
 ## 2. Business Understanding
@@ -22,6 +22,7 @@ This project aims to build a classification model to accurately identify what a 
 ![APWG Logo](https://seeklogo.com/images/A/anti-phishing-working-group-apwg-logo-1728E9290D-seeklogo.com.png)
 
 Phishing is a type of cyber-attack that is engineered to steal user data that often includes login credentials, bank accounts, credit card numbers, and much more personal and sensitive information. Phishing attacks are particularly predatory against older people who are often not as familiar with technology. <br>
+<br>
 The stakeholder for this project is the **Anti Phishing Working Group (APWG)**. APWG is one of the world's leading companies in the fight against cybercrimes. The goal of this project is to create a model that would help in accurately identifying phishing websites as well as identifying common features that are often associated with said phishing websites.
 
 ---
@@ -41,7 +42,9 @@ The target variable in this project is the `status` column where it is split int
 ---
 ## 4. Modeling
 ---
-Our initial model is a DummyClassifier model that gives us a raw estimation of whether a website would be classified as phishing or not. I focused on accuracy and recall as my evalution metrics. Recall is important to this project because it assists in identifying the false negatives in the dataset. A false negative in this project would be if the model identifies an observation as a legtimate website when in reallty it actually is a phishing website. The training accuracy and recall score are about 50% for each score, which is what we are expecting. The final model is a LogisticRegression model with optimal hyperparameters from the GridSearchCV function that focuses on the top 10 features identified from the ExtraTreesClassifier model. The final model produced an accuracy score of 92% and a recall score of 93%. This final model also produced an AUC curve with a score of 0.97.
+Our initial model is a DummyClassifier model that gives us a raw estimation of whether a website would be classified as phishing or not. I focused on accuracy and recall as my evalution metrics. Recall is important to this project because it assists in identifying the false negatives in the dataset. A false negative in this project would be if the model identifies an observation as a legtimate website when in reallty it actually is a phishing website. <br>
+<br>
+The training accuracy and recall score are about 50% for each score, which is what we are expecting. The final model is a LogisticRegression model with optimal hyperparameters from the GridSearchCV function that focuses on the top 10 features identified from the ExtraTreesClassifier model. The final model produced an accuracy score of 92% and a recall score of 93%. This final model also produced an AUC curve with a score of 0.97.
 
 ![Final Model](images/finalmetrics.png)
 ![Final AUC](images/finalAUC.png)
@@ -52,6 +55,7 @@ Our initial model is a DummyClassifier model that gives us a raw estimation of w
 
 The model that performed best was the model that utilized the features identified through the ExtraTreeClassifier and the optimized hyperparamters of the GridSearchCV. This model produced an accuracy score of **92%** and a recall score of **93%**. <br>
 The model also produces an AUC score of **0.97**, meaning that it has high classification accuracy. <br>
+<br>
 This model works well with the given data, and it has the potential to become a tool to help protect people against phishing attacks. 
 I identified some important features such as the `google_index` and the `phish_hints`. If a feature lacks a `google_index`(1), then the website is 20x more likely to be a phishing website. Similarly, if a website URL has `phish_hints` features, it is ~5x as likely to be a phishing website.
 
@@ -59,13 +63,14 @@ I identified some important features such as the `google_index` and the `phish_h
 ## 6. Conclusion
 ---
 Overall, this final model has high potential in helping the AGSW in identifying phishing websites. This model can be used in tandem with the research that AGSW conducts to better identify phishing websites and protect those who would be susceptible to these kinds of cyber attacks. <br>
+<br>
 Based on the data, I would recommend that:
 - Make sure the Google Index is accessible for people to utilize as a resource to check credibility
 - Educate the population on common phishing website characteristics identified in the project so that they may be vigilant against cyber attacks.
 - Stay up-to-date with new phishing techniques (such as brand impersonation, remote work surveys, fake IT emails, etc.)
 <br>
  
-Some future actions I would like to consider is:
+Some future actions I would like to consider:
 - Utilize this model as a basis for tackling scam and phishing attacks that utilize text messages and phone calls instead of the traditional websites.
 - Implement this model in a web program where people can input URLS and get an output of how likely a website is to be phishing or not.
 - Utilize this model as a basis for phishing detection for other languages and nuances that may be country-specific.
@@ -83,6 +88,6 @@ Some future actions I would like to consider is:
 
 ├── [Phishing Project.ipynb](https://github.com/petercvuong/Phishing-Detector-Capstone/blob/main/Phishing%20Project%20Notebook.ipynb)              ---------------------> The jupyter notebook containing the finalized code.
 
-├── [Web Phishing Detector.pdf](https://github.com/petercvuong/Phishing-Detector-Capstone/blob/main/Web%20Phishing%20Detector.pdf)              --------------------------> A PDF of the presentaion.
+├── [Web Phishing Detector Presentation.pdf](https://github.com/petercvuong/Phishing-Detector-Capstone/blob/main/Web%20Phishing%20Detector%20Presentation.pdf)              --------------------------> A PDF of the presentaion.
 
 ├── [README.md](https://github.com/petercvuong/Phishing-Detector-Capstone/blob/main/README.md)              ------------------------------> README.md for the project (you are here now).
