@@ -77,9 +77,10 @@ Some future actions I would like to consider:
 ## Repo Navigation
 ---
 
-├── [data/](https://github.com/petercvuong/Phishing-Detector-Capstone/tree/main/data)    -------------------------------------> Data used for this project collected by data.world.
+├── [data/](https://github.com/petercvuong/Phishing-Detector-Capstone/tree/main/data)    -------------------------------------> Data used for this project collected by Mendeley Data.
 
-├── [images/](https://github.com/petercvuong/Phishing-Detector-Capstone/tree/main/images) --------------------------------------> All images used in the notebook and README.md.
+├── [images/](https://github.com/petercvuong/Phishing-Detector-Capstone/tree/main/images) --------------------------------------> Visualizations used in the presentation and README.md.
+<br>(logos and images used in README have URL associated with image source in markdown)
 
 ├── [.gitignore](https://github.com/petercvuong/Phishing-Detector-Capstone/blob/main/.gitignore) ---------------------------------> .gitignore used for the project.
 
@@ -87,6 +88,6 @@ Some future actions I would like to consider:
 
 ├── [Final Phishing Capstone Notebook.ipynb](https://github.com/petercvuong/Phishing-Detector-Capstone/blob/main/Final%20Phishing%20Capstone%20Notebook.ipynb)              ---------------------> The jupyter notebook containing the finalized code.
 
-├── [Web Phishing Detector Presentation.pdf](https://github.com/petercvuong/Phishing-Detector-Capstone/blob/main/Web%20Phishing%20Detector%20Presentation.pdf)              --------------------------> A PDF of the presentaion.
+├── [Web Phishing Detector Presentation.pdf](https://github.com/petercvuong/Phishing-Detector-Capstone/blob/main/Web%20Phishing%20Detector%20Presentation.pdf)              --------------------------> A PDF of the presentation.
 
 ├── [README.md](https://github.com/petercvuong/Phishing-Detector-Capstone/blob/main/README.md)              ------------------------------> README.md for the project (you are here now).
