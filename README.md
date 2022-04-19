@@ -53,8 +53,7 @@ The training accuracy and recall score are about 50% for each score, which is wh
 ## 5. Evaluation
 ---
 
-The model that performed best was the model that utilized the features identified through the ExtraTreeClassifier and the optimized hyperparamters of the GridSearchCV. This model produced an accuracy score of **92%** and a recall score of **93%**. <br>
-The model also produces an AUC score of **0.97**, meaning that it has high classification accuracy. <br>
+The model that performed best was the model that utilized the features identified through the ExtraTreeClassifier and the optimized hyperparamters of the GridSearchCV. This model produced an accuracy score of **92%** and a recall score of **93%**. The model also produces an AUC score of **0.97**, meaning that it has high classification accuracy. <br>
 <br>
 This model works well with the given data, and it has the potential to become a tool to help protect people against phishing attacks. 
 I identified some important features such as the `google_index` and the `phish_hints`. If a feature lacks a `google_index`(1), then the website is 20x more likely to be a phishing website. Similarly, if a website URL has `phish_hints` features, it is ~5x as likely to be a phishing website.
